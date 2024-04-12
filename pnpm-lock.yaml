@@ -28,6 +28,9 @@ devDependencies:
   '@types/node':
     specifier: ^20.12.5
     version: 20.12.5
+  '@unocss/preset-wind':
+    specifier: ^0.59.1
+    version: 0.59.1
   '@vitejs/plugin-vue':
     specifier: ^5.0.4
     version: 5.0.4(vite@5.2.8)(vue@3.4.21)

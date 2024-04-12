@@ -9,29 +9,12 @@ function add() {
 </script>
 
 <template>
-  <div class="welcome">
+  <div class="flex flex-col justify-center gap-6">
     <h1>This is a welcome page</h1>
-    <div class="counter">
-      <NButton @click="add">
-        add
-      </NButton>
+    <div class="flex items-center gap-12">
+      <Icon class="cursor-pointer" size="32" icon="ic:outline-add" @click="add" />
       <span>count: {{ counterStore.count }}</span>
       <span>double count: {{ counterStore.doubleCount }}</span>
     </div>
   </div>
 </template>
-
-<style scoped>
-.welcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-
-.counter {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-</style>
