@@ -10,6 +10,7 @@ export enum RouteNames {
 export const routes: RouteRecordRaw[] = [
   {
     path: '/',
+    redirect: '/home',
     component: MainLayout,
     children: [
       {
