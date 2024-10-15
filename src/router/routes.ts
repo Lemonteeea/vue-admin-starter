@@ -1,6 +1,6 @@
 import type { RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import MainLayout from '@/layouts/MainLayout.vue'
+import HomeView from '../views/HomeView.vue'
 
 export enum RouteNames {
   Home = 'home',

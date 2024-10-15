@@ -1,6 +1,7 @@
 // import { defineConfig } from 'unocss'
 // import presetWind from '@unocss/preset-wind'
 
+import presetWind from '@unocss/preset-wind'
 // export default defineConfig({
 //   presets: [presetWind()],
 //   theme: {
@@ -33,7 +34,6 @@
 //   },
 // })
 import { defineConfig } from 'unocss'
-import presetWind from '@unocss/preset-wind'
 import colors from './theme/colors'
 
 export default defineConfig({

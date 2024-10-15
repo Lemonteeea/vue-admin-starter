@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Icon as Iconify } from '@iconify/vue'
 import type { IconProps as NIconProps } from 'naive-ui'
+import { Icon as Iconify } from '@iconify/vue'
 
 export interface IconProps extends /* @vue-ignore */ NIconProps {
   icon: string

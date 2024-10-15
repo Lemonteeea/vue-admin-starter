@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import type { MenuOption } from 'naive-ui'
 import type { RouteRecordRaw } from 'vue-router'
-import { useRoute, useRouter } from 'vue-router'
 import Icon from '@/components/Icon.vue'
 import { routes } from '@/router'
+import { useRoute, useRouter } from 'vue-router'
 
 const collapsed = ref(false)
 const menuOptions: MenuOption[] = makeMenuOptions(routes[0].children as RouteRecordRaw[])
