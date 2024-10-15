@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import type { MenuOption } from 'naive-ui'
 import type { RouteRecordRaw } from 'vue-router'
-import Icon from '@/components/Icon.vue'
+import BaseIcon from '@/components/BaseIcon.vue'
+import BaseSvg from '@/components/BaseSvg.vue'
 import { routes } from '@/router'
-import { useRoute, useRouter } from 'vue-router'
 
 const collapsed = ref(false)
 const menuOptions: MenuOption[] = makeMenuOptions(routes[0].children as RouteRecordRaw[])
@@ -15,7 +15,7 @@ function makeMenuOptions(routes: RouteRecordRaw[]): MenuOption[] {
     return {
       key: route.name as string,
       title: meta?.title || '',
-      icon: meta?.icon ? () => h(Icon, { icon: meta.icon as string }) : undefined,
+      icon: meta?.icon ? () => h(BaseIcon, { icon: meta.icon as string }) : undefined,
       children: route.children ? makeMenuOptions(route.children) : undefined,
     }
   })
@@ -34,7 +34,7 @@ function handleMenuChange(e: string) {
 <template>
   <NLayout position="absolute">
     <NLayoutHeader class="h-16 flex items-center px-10 text-lg gap-2 text-primary" bordered>
-      <img src="@/assets/logo.svg" alt="logo" class="h-6 ">
+      <BaseSvg name="logo" class="h-8 w-8" />
       Vue Admin
     </NLayoutHeader>
     <NLayout position="absolute" style="top: 4rem" has-sider>
